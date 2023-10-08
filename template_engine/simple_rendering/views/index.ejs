@@ -1,0 +1,19 @@
+<%- include('partials/header'); %>
+
+    <h1>
+        <%= title %>
+    </h1>
+
+    <%= new Date() %>
+
+    <ul>
+        <% for (let i = 0; i < users.length; i++) { %>
+            <li>
+                <%= users[i].id%>
+                <%= users[i].name%> 
+                <%= users[i].lastname%>
+            </li>
+        <% } %>
+    </ul>
+
+<%- include('partials/footer'); %>
